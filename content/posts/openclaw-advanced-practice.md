@@ -1,6 +1,6 @@
 ---
 title: "OpenClaw 高级进阶用法：把个人 AI 助手用成可靠的工作流系统"
-date: 2026-07-27T20:20:00+08:00
+date: 2026-07-27T20:10:00+08:00
 draft: false
 description: "从一次性问答到可复用工作流，介绍 OpenClaw 的任务拆解、上下文治理、子代理协作、审批边界与自动化实践。"
 categories: [技术]

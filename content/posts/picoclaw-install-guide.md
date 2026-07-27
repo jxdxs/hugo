@@ -2,7 +2,6 @@
 title: "PicoClaw 入门：从安装到运行第一个 AI 助手"
 date: 2026-07-27T16:00:00+08:00
 draft: false
-aliases: ["/posts/picoclaw-install-guide/"]
 description: "一篇面向新手的 PicoClaw 安装、模型配置、命令行使用与 Telegram 接入教程。"
 tags: [PicoClaw, AI, 教程]
 categories: [技术]

@@ -9,7 +9,7 @@ concurrency:
   group: pages
   cancel-in-progress: true
 env:
-  HUGO_VERSION: '0.164.0'
+  HUGO_VERSION: '0.128.2'
 jobs:
   deploy:
     runs-on: ubuntu-latest

@@ -1,7 +1,6 @@
 baseURL: https://jxdxs.github.io/hugo/
 languageCode: zh-cn
 title: Kevin's Blog
-theme: simple
 pagination:
   pagerSize: 10
 params:

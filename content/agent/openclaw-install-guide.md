@@ -2,6 +2,7 @@
 title: "OpenClaw 入门：从安装到第一次对话"
 date: 2026-07-27T16:45:00+08:00
 draft: false
+aliases: ["/posts/openclaw-install-guide/"]
 description: "面向新手的 OpenClaw 安装、初始化、网关验证与安全配置教程。"
 tags: [OpenClaw, AI, 教程]
 categories: [技术]

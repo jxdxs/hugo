@@ -4,7 +4,7 @@ date: 2026-07-27T16:00:00+08:00
 draft: false
 description: "一篇面向新手的 PicoClaw 安装、模型配置、命令行使用与 Telegram 接入教程。"
 tags: [PicoClaw, AI, 教程]
-categories: [技术]
+categories: [Agent]
 ---
 
 PicoClaw 是由 Sipeed 发起、使用 Go 语言编写的轻量级个人 AI 助手。它采用单二进制文件，支持 x86_64、ARM64、MIPS、RISC-V 等多种架构，适合部署在普通 Linux 服务器、树莓派和资源有限的开发板上。

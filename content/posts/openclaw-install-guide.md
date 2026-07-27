@@ -4,7 +4,7 @@ date: 2026-07-27T16:45:00+08:00
 draft: false
 description: "面向新手的 OpenClaw 安装、初始化、网关验证与安全配置教程。"
 tags: [OpenClaw, AI, 教程]
-categories: [技术]
+categories: [Agent]
 ---
 
 OpenClaw 是一个可以连接大模型、工具和聊天渠道的个人 AI 助手框架。本文以 Linux/macOS 为例，带你从零完成安装，并运行第一次对话。

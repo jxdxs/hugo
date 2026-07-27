@@ -1,0 +1,1 @@
+{{ define "main" }}<section class="taxonomy"><h1>{{ .Title }}</h1><p class="taxonomy-intro">按主题浏览博客内容</p><div class="term-list">{{ range .Data.Terms.Alphabetical }}<a class="term-card" href="{{ .Page.RelPermalink }}"><strong>{{ .Page.Title }}</strong><span>{{ len .Pages }} 篇文章</span></a>{{ end }}</div></section>{{ end }}

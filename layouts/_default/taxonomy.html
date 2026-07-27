@@ -1,0 +1,1 @@
+{{ define "main" }}<section class="taxonomy"><h1>{{ .Title }}</h1><p class="taxonomy-intro">共 {{ len .Pages }} 篇文章</p><div class="posts">{{ range .Pages }}{{ partial "post-card.html" . }}{{ end }}</div></section>{{ end }}

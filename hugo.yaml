@@ -7,6 +7,11 @@ params:
   description: Kevin 的个人博客
   author: Kevin Lee
   showReadingTime: true
+  categoryList:
+    - 技术
+    - Agent
+    - 随笔
+    - 工具
 markup:
   goldmark:
     renderer:

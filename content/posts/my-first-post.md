@@ -23,4 +23,3 @@ categories:
 - 代码
 
 ```python
-print("Hello, Kevin")

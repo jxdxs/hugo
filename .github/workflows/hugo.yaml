@@ -25,7 +25,7 @@ jobs:
           tar -xzf /tmp/hugo.tar.gz -C "$HOME/.local/hugo" hugo
           echo "$HOME/.local/hugo" >> "$GITHUB_PATH"
       - name: Build
-        run: hugo --gc --minify --baseURL 'https://jxdxs.github.io/hugo/'
+        run: hugo --gc --minify
       - name: Publish to gh-pages
         uses: peaceiris/actions-gh-pages@v4
         with:

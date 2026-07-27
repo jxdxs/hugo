@@ -6,7 +6,7 @@
   <meta name="description" content="{{ .Description | default .Site.Params.description }}">
   <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
 </head>
-<body><header><div class="wrap nav"><a class="brand" href="{{ "" | relURL }}">{{ .Site.Title }}</a><nav><a class="home-link" href="{{ "" | relURL }}" aria-label="首页" title="首页"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.8 12 3l9 7.8v9.2a1 1 0 0 1-1 1h-5.5v-6h-5v6H4a1 1 0 0 1-1-1v-9.2Z"/></svg></a><a class="nav-pill" href="{{ "categories/agent/" | relURL }}">Agent</a><a class="nav-pill" href="{{ "categories/技术/" | relURL }}">技术</a><a class="nav-pill" href="{{ "categories/随笔/" | relURL }}">随笔</a><a class="nav-pill" href="{{ "tags/" | relURL }}">标签</a></nav></div></header>
+<body><header><div class="wrap nav"><a class="brand" href="{{ "" | relURL }}">{{ .Site.Title }}</a><nav><a class="nav-pill" href="{{ "categories/agent/" | relURL }}">Agent</a><a class="nav-pill" href="{{ "categories/技术/" | relURL }}">技术</a><a class="nav-pill" href="{{ "categories/随笔/" | relURL }}">随笔</a><a class="nav-pill" href="{{ "tags/" | relURL }}">标签</a></nav></div></header>
 <main class="wrap">{{ block "main" . }}{{ end }}</main>
 <footer><div class="wrap">© {{ now.Year }} {{ .Site.Params.author }} · Powered by Hugo</div></footer></body>
 </html>

@@ -1,0 +1,1 @@
+{{ define "main" }}<section class="hero"><p class="eyebrow">WELCOME</p><h1>{{ .Site.Title }}</h1><p>{{ .Site.Params.description }}</p></section><h2>最新文章</h2><div class="posts">{{ range first 10 (where .Site.RegularPages "Type" "posts") }}{{ partial "post-card.html" . }}{{ end }}</div>{{ end }}

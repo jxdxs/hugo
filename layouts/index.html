@@ -1,1 +1,35 @@
-{{ define "main" }}<section class="home-posts"><h2>最新文章</h2><div class="posts">{{ range first 10 (where .Site.RegularPages "Type" "posts") }}{{ partial "post-card.html" . }}{{ end }}</div></section>{{ end }}
+{{ define "main" }}
+{{- $paginator := .Paginate (where .Site.RegularPages "Type" "posts") -}}
+<section class="home-posts">
+  <h2>最新文章</h2>
+  <div class="posts">
+    {{ range $paginator.Pages }}
+      {{ partial "post-card.html" . }}
+    {{ end }}
+  </div>
+  <div class="pagination-bar">
+    {{ if gt $paginator.TotalPages 1 }}
+    <div class="pagination-nav">
+      {{ if $paginator.HasPrev }}
+        <a class="page-btn" href="{{ $paginator.Prev.URL }}">← 上一页</a>
+      {{ else }}
+        <span class="page-btn disabled">← 上一页</span>
+      {{ end }}
+      {{- range $paginator.Pagers -}}
+        {{ if eq .PageNumber $paginator.PageNumber }}
+          <span class="page-num current">{{ .PageNumber }}</span>
+        {{ else }}
+          <a class="page-num" href="{{ .URL }}">{{ .PageNumber }}</a>
+        {{ end }}
+      {{- end -}}
+      {{ if $paginator.HasNext }}
+        <a class="page-btn" href="{{ $paginator.Next.URL }}">下一页 →</a>
+      {{ else }}
+        <span class="page-btn disabled">下一页 →</span>
+      {{ end }}
+    </div>
+    <div class="pagination-info">第 {{ $paginator.PageNumber }} / {{ $paginator.TotalPages }} 页 · 共 {{ $paginator.TotalNumberOfElements }} 篇</div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

@@ -25,11 +25,11 @@ tags: [eSIM, 保号, 免费短信, 海外号码, 手机卡]
 
 为了避免手机端看不到或无法点击 Markdown 链接，这里把网址原样列出来。**只建议从以下官方域名进入，不要从搜索广告、闲鱼、论坛代购或“已实名号码”页面购买。**
 
-1. ClubSIM 香港：`https://www.clubsim.com.hk/zh/`
-2. eSIM Plus：`https://esimplus.me/`
-3. giffgaff PAYG：`https://www.giffgaff.com/sim-only/payg`
-4. Ultra Mobile PayGo：`https://www.ultramobile.com/paygo/`
-5. Tello eSIM：`https://tello.com/buy/esim`
+1. ClubSIM 香港：[https://www.clubsim.com.hk/zh/](https://www.clubsim.com.hk/zh/)
+2. eSIM Plus：[https://esimplus.me/](https://esimplus.me/)
+3. giffgaff PAYG：[https://www.giffgaff.com/sim-only/payg](https://www.giffgaff.com/sim-only/payg)
+4. Ultra Mobile PayGo：[https://www.ultramobile.com/paygo/](https://www.ultramobile.com/paygo/)
+5. Tello eSIM：[https://tello.com/buy/esim](https://tello.com/buy/esim)
 
 下面每一节的“官方入口”也会再次列出网址；如果某个官方页面没有显示文中所说的低价产品，**以页面当前显示为准，不要为了凑价格购买相近但更贵的套餐。**
 
@@ -68,7 +68,7 @@ ClubSIM 的最低保号方案不应被理解为“所有功能免费”。公开
 
 ### ClubSIM 实操：开卡、切换到最低保号、收短信与防坑
 
-**官方入口：** `https://www.clubsim.com.hk/zh/` → 登录/注册 → **Pack Store（套餐商店）** 或 **Support Center（客服中心）**。
+**官方入口：** [https://www.clubsim.com.hk/zh/](https://www.clubsim.com.hk/zh/) → 登录/注册 → **Pack Store（套餐商店）** 或 **Support Center（客服中心）**。
 
 1. 在官方站注册账户并完成香港法规要求的实名验证。先确认浏览器地址栏是 `clubsim.com.hk`，不要把证件交给代购。
 2. 进入 Pack Store 后，不要默认选择月租数据套餐。逐项查看产品说明，寻找明确写有 **保号/有效期/号码有效性** 的最低价选项；如果当前页面只显示旅行包或月租包，就不要按旧教程购买。
@@ -108,7 +108,7 @@ eSIM Plus 提供爱沙尼亚 +372 号码相关服务。公开介绍显示，部�
 
 ### eSIM Plus 实操：先确认是不是长期移动号码，再决定是否购买
 
-**官方入口：** `https://esimplus.me/`。注意：`https://esimplus.me/temporary-numbers` 是临时号码入口，不能用于长期保号。
+**官方入口：** [https://esimplus.me/](https://esimplus.me/)。注意：[https://esimplus.me/temporary-numbers](https://esimplus.me/temporary-numbers) 是临时号码入口，不能用于长期保号。
 
 1. 在首页进入包含电话/短信的产品页，不要进入纯流量旅行 eSIM 页面。
 2. 购买前必须在产品详情或客服书面确认：号码是否为长期分配、是否是移动运营商号码、是否可以在手机系统的短信 App 中接收、是否支持国际漫游、是否能从中国大陆接收 SMS，以及号码多久不使用会被回收。
@@ -142,7 +142,7 @@ giffgaff 目前提供 eSIM 相关流程，但能否直接申请、实体卡转 e
 
 ### giffgaff 实操：不要买 goodybag，用 PAYG 余额维持号码
 
-**官方入口：** `https://www.giffgaff.com/sim-only/payg`；六个月停用规则： `https://help.giffgaff.com/en/articles/242797-understanding-why-your-number-has-been-deactivated`。
+**官方入口：** [https://www.giffgaff.com/sim-only/payg](https://www.giffgaff.com/sim-only/payg)；六个月停用规则：[https://help.giffgaff.com/en/articles/242797-understanding-why-your-number-has-been-deactivated](https://help.giffgaff.com/en/articles/242797-understanding-why-your-number-has-been-deactivated)。
 
 1. 从 PAYG 页面申请 SIM，激活号码并登录账户。不要购买 goodybag 作为默认方案；保号的目标是 PAYG 余额，而不是每月流量包。
 2. 账户激活后充值最低可用的 Airtime Credit，确认余额在账户中可见。eSIM 是否能直接申请，要以账户或官方 App 的实际选项为准，不能因为有 eSIM 选项就自动认为 PAYG 一定可转换。
@@ -175,7 +175,7 @@ Ultra PayGo 的国际漫游短信不是无限免费功能。官方说明显示�
 
 ### Ultra PayGo 实操：先买 PayGo，再用余额支付海外短信
 
-**官方入口：** `https://www.ultramobile.com/paygo/`；国际漫游资费： `https://www.ultramobile.com/paygo/international-roaming/`。
+**官方入口：** [https://www.ultramobile.com/paygo/](https://www.ultramobile.com/paygo/)；国际漫游资费：[https://www.ultramobile.com/paygo/international-roaming/](https://www.ultramobile.com/paygo/international-roaming/)。
 
 1. 在 PayGo 页面确认当前仍提供 3 美元/月方案，再从官方购买/激活入口办理；不要把普通 Ultra 月租套餐当成 PayGo。
 2. 购买前确认手机已解锁、支持目标频段，并在结账页面明确看到 eSIM 选项。若只提供实体 SIM，就不要假定海外可以改 eSIM。
@@ -206,7 +206,7 @@ Tello 官方说明，开启 Wi-Fi Calling 后，即使人在美国境外，也�
 
 ### Tello 实操：买最低套餐并提前开通 Wi-Fi Calling
 
-**官方入口：** `https://tello.com/buy/esim`；海外 Wi-Fi Calling 说明： `https://tello.com/us_phone_number_for_abroad`。
+**官方入口：** [https://tello.com/buy/esim](https://tello.com/buy/esim)；海外 Wi-Fi Calling 说明：[https://tello.com/us_phone_number_for_abroad](https://tello.com/us_phone_number_for_abroad)。
 
 1. 在 Tello eSIM 页面选择最低限度的通话/短信套餐，结账时确认月费、税费和自动续费金额。不要误选高流量套餐；Tello 是按月付费，不存在像 giffgaff 那样“充值一次多年不扣月费”的 PAYG 保号方式。
 2. 购买前确认手机已解锁、支持 eSIM，并准备好可以收邮件的地址。海外用户不要先删除原有可接收验证码的号码，因为 Tello 激活和账户验证可能需要额外验证。

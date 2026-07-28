@@ -15,6 +15,21 @@ tags: [eSIM, 保号, 海外号码, 短信验证码]
 
 > **重要说明：**公开内容可能是推广、个人经验、旧政策或带 AFF 链接的教程。本文把价格分为“经验参考”和“官方当前页面”，并用“高/中/低风险”标注。下单前必须以官方结账页、当前条款和你自己的短信测试为准。
 
+## 十家供应商官方入口
+
+以下是可直接复制的完整官方网址；点击网址会在新标签页打开。
+
+1. 泰国 AIS：<https://www.ais.th/en/consumers/package/prepaid>
+2. 香港 ClubSIM：<https://www.clubsim.com.hk/zh/>
+3. 香港 CSL：<https://www.hkcsl.com/en/prepaid-sim/>
+4. 英国 Lyca Mobile：<https://www.lycamobile.co.uk/en/>
+5. 德国 O2 Prepaid：<https://www.o2online.de/vorteile/prepaid/>
+6. 英国 VOXI：<https://www.voxi.co.uk/>
+7. 瑞士 Yallo：<https://www.yallo.ch/en/mobile/prepaid>
+8. 日本 Cuniq JP：<https://www.cuniq.jp/home>
+9. Ultra Mobile PayGo：<https://www.ultramobile.com/paygo/>
+10. Tello eSIM：<https://tello.com/buy/esim>
+
 ## 先看结论：Top 10 怎么选
 
 | 排名 | 方案 | 参考线索 | 低频保号逻辑 | 参考成本 | 综合判断 |
@@ -38,7 +53,7 @@ tags: [eSIM, 保号, 海外号码, 短信验证码]
 
 相关内容的 AIS 帖子反复提到：充值约 4 美元可以延长较长有效期，之后每年用约 1.5 美元继续延长；另一个优点是支持 Wi-Fi Calling，而且讨论中提到不强制按 IP 判断使用地点。搜索结果还显示该方案需要拍照和活体识别 KYC。
 
-- [AIS 官方预付费入口](https://www.ais.th/en/consumers/package/prepaid)
+官方入口：<https://www.ais.th/en/consumers/package/prepaid>
 
 ### 正确开通方法
 
@@ -110,7 +125,7 @@ tags: [eSIM, 保号, 海外号码, 短信验证码]
 
 公开讨论 2026 年帖子把 LycaMobile UK 的某些 UK Plan Smart eSIM 描述为中国大陆可漫游、低开卡费、无需 KYC，并给出约 2.5 欧元开卡、约 1.5 英镑年保号的经验数字。另一篇帖子也用“每年 £1.5 保号”作为标题。
 
-- [LycaMobile UK 官方网站](https://www.lycamobile.co.uk/en/)
+官方入口：<https://www.lycamobile.co.uk/en/>
 
 ### 正确开通方法
 
@@ -133,7 +148,7 @@ tags: [eSIM, 保号, 海外号码, 短信验证码]
 
 相关内容的德国 O2 教程标题直接写出“免费开卡-KYC-激活-充值全流程，保号：180 天内充值一次”；另一篇教程重点讨论漫游、Wi-Fi Calling 和 0.01 自动保号。搜索摘要显示可在中国大陆接入中国移动 LTE，但必须以当期漫游合作为准。
 
-- [O2 官方 Prepaid 页面](https://www.o2online.de/vorteile/prepaid/)
+官方入口：<https://www.o2online.de/vorteile/prepaid/>
 
 ### 正确开通方法
 
@@ -156,7 +171,7 @@ O2 低价的关键不是“免费永不过期”，而是按规则定期充值�
 
 公开讨论 VOXI 攻略称，理论上可利用“30+180=210 天”：激活后在窗口内完成一次有效操作，可以保留号码 180 天；号码失效前 90 天可能会通过短信提醒。这个方案的价值在于维护动作少，而不是月租长期免费。
 
-经验参考：[VOXI 官方网站](https://www.voxi.co.uk/)。
+官方入口：<https://www.voxi.co.uk/>。
 
 ### 正确开通方法
 
@@ -178,7 +193,7 @@ VOXI 的 210 天是公开资料根据旧规则推算的理论周期，不是永�
 
 公开讨论有 Yallo/Lebara 申请教程，公开讨论还出现“1.3 USD/年保号 Yallo”的讨论。但搜索摘要明确伴随负面评价，称客服回答不稳定。也就是说，价格线索存在，可靠性不能只看标题。
 
-经验参考：[Yallo 官方网站](https://www.yallo.ch/en/mobile/prepaid)。
+官方入口：<https://www.yallo.ch/en/mobile/prepaid>。
 
 ### 正确开通方法
 
@@ -200,7 +215,7 @@ Yallo 的极低价格可能对应特定产品、促销或延长有效期操作�
 
 公开讨论用户分享过从 Cuniq JP 官网申请日本号码、寄送地址填写、eSIM 下载和中国大陆激活的流程，摘要称可显示 +81 号码、运营商为中国移动，并可登录官网绑定邮箱查看套餐。另有 Cuniq 香港号讨论提到至少先开 3 个月，后续在 App 切换为 9 港币/月行政费保号。
 
-- [Cuniq JP 官方网站](https://www.cuniq.jp/home)
+官方入口：<https://www.cuniq.jp/home>
 
 ### 正确开通方法
 
@@ -222,7 +237,7 @@ Cuniq 不是零月租卡，不能为了“有 eSIM”就把它和 6 港币年费
 
 公开讨论海外手机卡汇总将 Ultra Mobile PayGo 归为美国真实号码低价方案，摘要提到 3 美元月租、基本通话短信和 Wi-Fi Calling，并提醒自动续费。它不是最低年费，但在“美国号码 + 低月租”组合中仍有位置。
 
-官方资料：[Ultra PayGo 官方页面](https://www.ultramobile.com/paygo/)。
+官方入口：<https://www.ultramobile.com/paygo/>。
 
 ### 正确开通方法
 
@@ -244,7 +259,7 @@ Cuniq 不是零月租卡，不能为了“有 eSIM”就把它和 6 港币年费
 
 相关内容的海外手机卡汇总把 Tello 作为美国 eSIM 方案，提到约 5 美元/月和约 420 元年保号成本。它的价值不在最低价格，而在官方明确说明 Wi-Fi Calling、海外保留美国号码和 OTP 的使用方式。
 
-官方资料：[Tello eSIM 官方购买页](https://tello.com/buy/esim)。
+官方入口：<https://tello.com/buy/esim>。
 
 ### 正确开通方法
 
@@ -254,7 +269,9 @@ Cuniq 不是零月租卡，不能为了“有 eSIM”就把它和 6 港币年费
 4. 出国后使用本地 SIM/Wi-Fi 提供数据，Tello 线路只承担通话和短信；关闭数据漫游。
 5. 每月检查自动续费、套餐状态和 Wi-Fi Calling 注册状态。
 
-官方入口：[Tello eSIM](https://tello.com/buy/esim)；海外使用说明：[人在海外保留美国号码](https://tello.com/us_phone_number_for_abroad)。
+官方入口：<https://tello.com/buy/esim>
+
+海外使用说明：<https://tello.com/us_phone_number_for_abroad>
 
 ### 避坑
 

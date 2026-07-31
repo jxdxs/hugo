@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>开源 on Kevin's Blog</title><link>https://bg.lioo.eu/tags/%E5%BC%80%E6%BA%90/</link><description>Recent content in 开源 on Kevin's Blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Fri, 31 Jul 2026 08:47:00 +0800</lastBuildDate><atom:link href="https://bg.lioo.eu/tags/%E5%BC%80%E6%BA%90/index.xml" rel="self" type="application/rss+xml"/><item><title>SSHTerm：用 Tauri 2 写了一个不到 5MB 的桌面 SSH/SFTP 客户端</title><link>https://bg.lioo.eu/posts/sshterm-tauri-ssh-client/</link><pubDate>Fri, 31 Jul 2026 08:47:00 +0800</pubDate><guid>https://bg.lioo.eu/posts/sshterm-tauri-ssh-client/</guid><description>最近在 GitHub 上翻到一个有意思的项目——SSHTerm ，一个用 Tauri 2 构建的桌面原生 SSH/SFTP 客户端。
+用了几天之后，我觉得它很值得聊聊。不是因为功能有多全（毕竟还是个 v0.1.0），而是因为它展示了用 Tauri 2 做工具类桌面应用的清爽路径。
+为什么值得看 现在市面上 SSH 客户端不少：FinalShell、Termius、Xshell、PuTTY……但 SSHTerm 的定位很明确——轻量、原生、开源、免费。
+几个关键数据：
+安装包约 5MB（Tauri 的招牌优势） 后端 Rust，前端 原生 HTML/CSS/JS + xterm.js 支持 Linux (.deb / .AppImage) + Windows (.msi) MIT 协议，随便改 没有 Electron 的几百 MB 体积，不需要 Java 运行时，不需要 .NET 框架。一个 Rust 二进制 + 一个 WebView，搞定。
+技术栈一览 从 Cargo.toml 和 package.json 可以清楚看到选型逻辑：
+层 技术 为什么选它 窗口框架 Tauri 2.0 体积小、性能好、Rust 原生 SSH 协议 ssh2 (rust) libssh2 绑定，成熟稳定 本地存储 rusqlite 嵌入式 SQLite，零配置 终端渲染 xterm.</description></item></channel></rss>

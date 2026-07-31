@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>进阶教程 on Kevin's Blog</title><link>https://bg.lioo.eu/tags/%E8%BF%9B%E9%98%B6%E6%95%99%E7%A8%8B/</link><description>Recent content in 进阶教程 on Kevin's Blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Mon, 27 Jul 2026 18:05:00 +0800</lastBuildDate><atom:link href="https://bg.lioo.eu/tags/%E8%BF%9B%E9%98%B6%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml"/><item><title>OpenClaw 进阶教程：多渠道、记忆、自动化与安全实践</title><link>https://bg.lioo.eu/posts/openclaw-advanced-guide/</link><pubDate>Mon, 27 Jul 2026 18:05:00 +0800</pubDate><guid>https://bg.lioo.eu/posts/openclaw-advanced-guide/</guid><description>如果你已经完成 OpenClaw 的安装，并能通过 Control UI 或 Telegram 进行第一次对话，下一步通常不是继续堆功能，而是把它配置成一个稳定、可控、可维护的个人 AI 助手。
+本文围绕日常使用中最有价值的进阶能力展开：多渠道接入、会话隔离、记忆管理、定时任务、子代理、工具权限、配置维护和故障排查。
+本文根据 OpenClaw 官方文档整理。OpenClaw 持续迭代，配置字段和命令可能随版本变化；执行前请以当前版本的官方文档和 openclaw --help 为准。示例中的 Token、API Key 和用户 ID 均为占位内容。
+一、先理解 OpenClaw 的组成 OpenClaw 可以看作一个运行在本机或服务器上的 Gateway。它把聊天渠道、Agent、模型、工具和会话连接起来：
+Telegram / Discord / WebChat / 其他渠道 ↓ Gateway ┌───────────┼───────────┐ 会话路由 Agent 安全策略 ↓ 模型、记忆、工具、技能 几个核心概念如下：
+Gateway：负责连接渠道、路由消息、管理会话和提供 Control UI。 Agent：负责理解任务、调用模型和工具，并在工作区中完成任务。 Session：一次连续的对话上下文。私聊、群聊、线程可以拥有不同会话。 Workspace：Agent 读写文件和保存项目上下文的工作目录。 Channel：Telegram、Discord、Signal、WhatsApp 等消息入口。 Tool：文件、Shell、浏览器、网络、节点和会话等能力。 Skill：可复用的操作流程或领域能力。 理解这些边界后，排查问题会容易很多：消息收不到，优先看 Channel；回复上下文不对，优先看 Session；命令不能执行，优先看 Tool 和安全策略。
+二、用 Control UI 管理日常工作 Gateway 启动后，可以使用：
+openclaw dashboard Control UI 通常用于：</description></item></channel></rss>

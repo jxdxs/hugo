@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>教程 on Kevin's Blog</title><link>https://bg.lioo.eu/tags/%E6%95%99%E7%A8%8B/</link><description>Recent content in 教程 on Kevin's Blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Mon, 27 Jul 2026 17:50:00 +0800</lastBuildDate><atom:link href="https://bg.lioo.eu/tags/%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml"/><item><title>ZeroClaw 入门：从安装到运行第一个 AI 助手</title><link>https://bg.lioo.eu/posts/zeroclaw-install-guide/</link><pubDate>Mon, 27 Jul 2026 17:50:00 +0800</pubDate><guid>https://bg.lioo.eu/posts/zeroclaw-install-guide/</guid><description>ZeroClaw 是一个使用 Rust 编写的轻量级 AI Agent 运行时。它以单个二进制程序运行，可以连接 OpenAI、Anthropic、Ollama 等多种模型服务，也支持 Telegram、Discord、Matrix、邮件、Webhook 和命令行等多种交互渠道。
+与普通的聊天客户端不同，ZeroClaw 不只是调用大模型回答问题，还可以通过工具访问 Shell、浏览器、HTTP 服务、硬件设备和自定义 MCP 服务。
+本文将带你完成：
+了解 ZeroClaw 的基本工作方式； 安装 ZeroClaw； 使用 Quickstart 初始化配置； 配置模型服务； 运行第一次命令行对话； 注册后台服务； 了解安全配置和常见问题。 本文根据 ZeroClaw 官方仓库和官方文档整理。ZeroClaw 仍在快速迭代，命令、配置字段和功能可能随版本变化。实际使用时，请以官方文档为准。
+官方项目地址：https://github.com/zeroclaw-labs/zeroclaw 官方文档：https://docs.zeroclawlabs.ai/ 一、ZeroClaw 是什么 ZeroClaw 可以理解为一个运行在本机上的 AI Agent 框架。
+它的大致工作流程如下：
+用户 ↓ 命令行、Telegram、Discord、Webhook 等渠道 ↓ ZeroClaw Agent Runtime ├── 模型提供商 ├── 工具系统 ├── 记忆系统 ├── 安全策略 └── Gateway / Dashboard ↓ AI 助手执行任务并返回结果 ZeroClaw 的主要特点包括：
+单个 Rust 二进制程序； 支持多种模型提供商； 支持本地 Ollama 等模型服务； 支持多个聊天渠道； 支持 Shell、浏览器、HTTP 等工具； 支持 Gateway 和 Web Dashboard； 支持记忆、定时任务和 SOP 工作流； 支持 Linux、macOS、Windows、FreeBSD、NixOS 和 Docker； 默认强调权限控制、审批和沙箱隔离。 需要注意的是，ZeroClaw 不是某个具体模型。它本身不提供大模型，而是负责连接和管理你选择的模型服务。</description></item><item><title>OpenClaw 入门：从安装到第一次对话</title><link>https://bg.lioo.eu/posts/openclaw-install-guide/</link><pubDate>Mon, 27 Jul 2026 16:45:00 +0800</pubDate><guid>https://bg.lioo.eu/posts/openclaw-install-guide/</guid><description>OpenClaw 是一个可以连接大模型、工具和聊天渠道的个人 AI 助手框架。本文以 Linux/macOS 为例，带你从零完成安装，并运行第一次对话。
+本文根据 OpenClaw 官方文档整理。不同版本的命令和配置字段可能会变化，遇到差异时请优先参考官方文档。
+一、准备工作 开始前准备好以下内容：
+一台 Linux 或 macOS 电脑；Windows 用户可以使用 PowerShell 或 WSL2 Node.js 22.22.3+、24.15+ 或 25.9+，官方推荐 Node.js 24 一个大模型服务商的 API Key，例如 OpenAI、Anthropic 或 Google 能够正常访问相关软件源和模型服务的网络环境 先检查 Node.js 版本：
+node --version 如果尚未安装 Node.js，可以参考 OpenClaw 官方的 Node.js 安装说明。不要使用过旧的 Node.js 版本，否则可能遇到依赖或运行时错误。
+二、安装 OpenClaw 在 Linux 或 macOS 终端执行官方安装脚本：
+curl -fsSL https://openclaw.ai/install.sh | bash 安装完成后，确认命令可用：
+openclaw --version Windows PowerShell 用户可以执行：
+iwr -useb https://openclaw.ai/install.ps1 | iex 如果你更偏好手动管理依赖，也可以使用 npm、Docker、Nix 等安装方式。新手建议先使用官方安装脚本，流程更简单。</description></item><item><title>PicoClaw 入门：从安装到运行第一个 AI 助手</title><link>https://bg.lioo.eu/posts/picoclaw-install-guide/</link><pubDate>Mon, 27 Jul 2026 16:00:00 +0800</pubDate><guid>https://bg.lioo.eu/posts/picoclaw-install-guide/</guid><description>PicoClaw 是由 Sipeed 发起、使用 Go 语言编写的轻量级个人 AI 助手。它采用单二进制文件，支持 x86_64、ARM64、MIPS、RISC-V 等多种架构，适合部署在普通 Linux 服务器、树莓派和资源有限的开发板上。
+本文以 Linux/macOS 的命令行为主，带你完成下载、初始化、配置模型，并运行第一个 AI 助手。
+本文根据 PicoClaw 官方仓库和官方文档整理。PicoClaw 仍处于快速迭代阶段，配置字段可能随版本变化，请以官方文档为准。
+一、准备工作 开始前准备好：
+一台 Linux、macOS 或 Windows 电脑 一个可用的大模型 API Key 能访问 GitHub Releases 和模型服务的网络环境 Linux 用户确认自己的 CPU 架构 Linux 查看架构：
+uname -m 常见对应关系如下：
+x86_64：普通 Intel/AMD 64 位电脑和服务器 aarch64 或 arm64：多数 64 位 ARM 设备 armv7l：部分 32 位 ARM 设备 riscv64：64 位 RISC-V 开发板 PicoClaw 的预编译版本不要求另外安装 Go。只有从源码构建时，才需要 Go 1.25+；如果还要构建 Web UI，则需要 Node.</description></item></channel></rss>

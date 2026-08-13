@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AI on Kevin's Blog</title><link>https://bg.lioo.eu/tags/ai/</link><description>Recent content in AI on Kevin's Blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Mon, 27 Jul 2026 20:10:00 +0800</lastBuildDate><atom:link href="https://bg.lioo.eu/tags/ai/index.xml" rel="self" type="application/rss+xml"/><item><title>OpenClaw 高级进阶用法：把个人 AI 助手用成可靠的工作流系统</title><link>https://bg.lioo.eu/posts/openclaw-advanced-practice/</link><pubDate>Mon, 27 Jul 2026 20:10:00 +0800</pubDate><guid>https://bg.lioo.eu/posts/openclaw-advanced-practice/</guid><description>如果说入门阶段的目标是“让 OpenClaw 正常回复”，进阶阶段的目标就是让它稳定地完成一类任务。这两者的差别，不在于给 Agent 开放尽可能多的工具，而在于能否把任务拆清楚、把权限划清楚、把结果验证清楚。
+本文不罗列所有配置字段，而是从实际工作流出发，介绍如何把 OpenClaw 从聊天入口逐步升级为一个可靠的个人 AI 工作台。
+本文依据 OpenClaw 的通用架构和官方文档整理。OpenClaw 仍在持续迭代，命令、配置字段和界面可能随版本变化。执行示例前，请以当前版本的官方文档、配置 Schema 和 openclaw --help 为准。文中的 Token、API Key 和用户 ID 均为占位内容。
+一、先从“聊天”切换到“任务”思维 低效的使用方式通常是把一大段模糊目标直接交给 Agent：
+帮我把这个项目做好。
+更可靠的方式，是把任务写成一个小型工作协议：
+目标：生成一份项目技术评估报告 输入：项目目录、官方文档、当前测试结果 步骤：读取 → 分析 → 形成初稿 → 运行验证 → 汇总问题 输出：Markdown 文件，包含结论、证据和待办项 限制：只读项目文件，不修改源代码，不向外部发布 验收：文件存在，命令可复现，结论与证据逐条对应 这套结构有三个好处：
+Agent 知道什么是最终结果，而不只是知道一个主题； 工具权限可以根据步骤逐步开放； 任务完成后有明确的验收标准，不会把“写出一段文字”误认为“工作完成”。 对于重复出现的事情，建议把这类协议沉淀为 Skill、模板或项目说明文件。以后只需补充输入，就能得到相对一致的结果。
+二、建立分层的工作区 工作区不是一个随便堆文件的目录。建议把稳定说明、临时产物和最终输出分开：
+workspace/ ├── AGENTS.md # 项目规则、边界和验收标准 ├── README.md # 项目说明 ├── notes/ # 调研记录和每日笔记 ├── drafts/ # 未确认的草稿 ├── output/ # 经过验证的交付物 ├── scripts/ # 可复用脚本 └── archive/ # 已完成或过期的资料 可以在项目根目录写明几条最重要的规则：</description></item><item><title>OpenClaw 进阶教程：多渠道、记忆、自动化与安全实践</title><link>https://bg.lioo.eu/posts/openclaw-advanced-guide/</link><pubDate>Mon, 27 Jul 2026 18:05:00 +0800</pubDate><guid>https://bg.lioo.eu/posts/openclaw-advanced-guide/</guid><description>如果你已经完成 OpenClaw 的安装，并能通过 Control UI 或 Telegram 进行第一次对话，下一步通常不是继续堆功能，而是把它配置成一个稳定、可控、可维护的个人 AI 助手。
+本文围绕日常使用中最有价值的进阶能力展开：多渠道接入、会话隔离、记忆管理、定时任务、子代理、工具权限、配置维护和故障排查。
+本文根据 OpenClaw 官方文档整理。OpenClaw 持续迭代，配置字段和命令可能随版本变化；执行前请以当前版本的官方文档和 openclaw --help 为准。示例中的 Token、API Key 和用户 ID 均为占位内容。
+一、先理解 OpenClaw 的组成 OpenClaw 可以看作一个运行在本机或服务器上的 Gateway。它把聊天渠道、Agent、模型、工具和会话连接起来：
+Telegram / Discord / WebChat / 其他渠道 ↓ Gateway ┌───────────┼───────────┐ 会话路由 Agent 安全策略 ↓ 模型、记忆、工具、技能 几个核心概念如下：
+Gateway：负责连接渠道、路由消息、管理会话和提供 Control UI。 Agent：负责理解任务、调用模型和工具，并在工作区中完成任务。 Session：一次连续的对话上下文。私聊、群聊、线程可以拥有不同会话。 Workspace：Agent 读写文件和保存项目上下文的工作目录。 Channel：Telegram、Discord、Signal、WhatsApp 等消息入口。 Tool：文件、Shell、浏览器、网络、节点和会话等能力。 Skill：可复用的操作流程或领域能力。 理解这些边界后，排查问题会容易很多：消息收不到，优先看 Channel；回复上下文不对，优先看 Session；命令不能执行，优先看 Tool 和安全策略。
+二、用 Control UI 管理日常工作 Gateway 启动后，可以使用：
+openclaw dashboard Control UI 通常用于：</description></item><item><title>OpenClaw 入门：从安装到第一次对话</title><link>https://bg.lioo.eu/posts/openclaw-install-guide/</link><pubDate>Mon, 27 Jul 2026 16:45:00 +0800</pubDate><guid>https://bg.lioo.eu/posts/openclaw-install-guide/</guid><description>OpenClaw 是一个可以连接大模型、工具和聊天渠道的个人 AI 助手框架。本文以 Linux/macOS 为例，带你从零完成安装，并运行第一次对话。
+本文根据 OpenClaw 官方文档整理。不同版本的命令和配置字段可能会变化，遇到差异时请优先参考官方文档。
+一、准备工作 开始前准备好以下内容：
+一台 Linux 或 macOS 电脑；Windows 用户可以使用 PowerShell 或 WSL2 Node.js 22.22.3+、24.15+ 或 25.9+，官方推荐 Node.js 24 一个大模型服务商的 API Key，例如 OpenAI、Anthropic 或 Google 能够正常访问相关软件源和模型服务的网络环境 先检查 Node.js 版本：
+node --version 如果尚未安装 Node.js，可以参考 OpenClaw 官方的 Node.js 安装说明。不要使用过旧的 Node.js 版本，否则可能遇到依赖或运行时错误。
+二、安装 OpenClaw 在 Linux 或 macOS 终端执行官方安装脚本：
+curl -fsSL https://openclaw.ai/install.sh | bash 安装完成后，确认命令可用：
+openclaw --version Windows PowerShell 用户可以执行：
+iwr -useb https://openclaw.ai/install.ps1 | iex 如果你更偏好手动管理依赖，也可以使用 npm、Docker、Nix 等安装方式。新手建议先使用官方安装脚本，流程更简单。</description></item><item><title>PicoClaw 入门：从安装到运行第一个 AI 助手</title><link>https://bg.lioo.eu/posts/picoclaw-install-guide/</link><pubDate>Mon, 27 Jul 2026 16:00:00 +0800</pubDate><guid>https://bg.lioo.eu/posts/picoclaw-install-guide/</guid><description>PicoClaw 是由 Sipeed 发起、使用 Go 语言编写的轻量级个人 AI 助手。它采用单二进制文件，支持 x86_64、ARM64、MIPS、RISC-V 等多种架构，适合部署在普通 Linux 服务器、树莓派和资源有限的开发板上。
+本文以 Linux/macOS 的命令行为主，带你完成下载、初始化、配置模型，并运行第一个 AI 助手。
+本文根据 PicoClaw 官方仓库和官方文档整理。PicoClaw 仍处于快速迭代阶段，配置字段可能随版本变化，请以官方文档为准。
+一、准备工作 开始前准备好：
+一台 Linux、macOS 或 Windows 电脑 一个可用的大模型 API Key 能访问 GitHub Releases 和模型服务的网络环境 Linux 用户确认自己的 CPU 架构 Linux 查看架构：
+uname -m 常见对应关系如下：
+x86_64：普通 Intel/AMD 64 位电脑和服务器 aarch64 或 arm64：多数 64 位 ARM 设备 armv7l：部分 32 位 ARM 设备 riscv64：64 位 RISC-V 开发板 PicoClaw 的预编译版本不要求另外安装 Go。只有从源码构建时，才需要 Go 1.25+；如果还要构建 Web UI，则需要 Node.</description></item></channel></rss>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Agent on Kevin's Blog</title><link>https://bg.lioo.eu/tags/agent/</link><description>Recent content in Agent on Kevin's Blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Mon, 27 Jul 2026 20:10:00 +0800</lastBuildDate><atom:link href="https://bg.lioo.eu/tags/agent/index.xml" rel="self" type="application/rss+xml"/><item><title>OpenClaw 高级进阶用法：把个人 AI 助手用成可靠的工作流系统</title><link>https://bg.lioo.eu/posts/openclaw-advanced-practice/</link><pubDate>Mon, 27 Jul 2026 20:10:00 +0800</pubDate><guid>https://bg.lioo.eu/posts/openclaw-advanced-practice/</guid><description>如果说入门阶段的目标是“让 OpenClaw 正常回复”，进阶阶段的目标就是让它稳定地完成一类任务。这两者的差别，不在于给 Agent 开放尽可能多的工具，而在于能否把任务拆清楚、把权限划清楚、把结果验证清楚。
+本文不罗列所有配置字段，而是从实际工作流出发，介绍如何把 OpenClaw 从聊天入口逐步升级为一个可靠的个人 AI 工作台。
+本文依据 OpenClaw 的通用架构和官方文档整理。OpenClaw 仍在持续迭代，命令、配置字段和界面可能随版本变化。执行示例前，请以当前版本的官方文档、配置 Schema 和 openclaw --help 为准。文中的 Token、API Key 和用户 ID 均为占位内容。
+一、先从“聊天”切换到“任务”思维 低效的使用方式通常是把一大段模糊目标直接交给 Agent：
+帮我把这个项目做好。
+更可靠的方式，是把任务写成一个小型工作协议：
+目标：生成一份项目技术评估报告 输入：项目目录、官方文档、当前测试结果 步骤：读取 → 分析 → 形成初稿 → 运行验证 → 汇总问题 输出：Markdown 文件，包含结论、证据和待办项 限制：只读项目文件，不修改源代码，不向外部发布 验收：文件存在，命令可复现，结论与证据逐条对应 这套结构有三个好处：
+Agent 知道什么是最终结果，而不只是知道一个主题； 工具权限可以根据步骤逐步开放； 任务完成后有明确的验收标准，不会把“写出一段文字”误认为“工作完成”。 对于重复出现的事情，建议把这类协议沉淀为 Skill、模板或项目说明文件。以后只需补充输入，就能得到相对一致的结果。
+二、建立分层的工作区 工作区不是一个随便堆文件的目录。建议把稳定说明、临时产物和最终输出分开：
+workspace/ ├── AGENTS.md # 项目规则、边界和验收标准 ├── README.md # 项目说明 ├── notes/ # 调研记录和每日笔记 ├── drafts/ # 未确认的草稿 ├── output/ # 经过验证的交付物 ├── scripts/ # 可复用脚本 └── archive/ # 已完成或过期的资料 可以在项目根目录写明几条最重要的规则：</description></item></channel></rss>
